@@ -5,10 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 import {HOURLY_RATE, INVOICE_NEW, INVOICE_SAVED} from "./Invoice";
 import moment from "moment";
 
-export const getInvoiceById = (invoices, id) => {
-    const selected = invoices.filter(invoice => invoice.id === id);
-    return selected.length > 0 ? selected[0] : null;
-}
 
 export const replaceInvoiceById = (invoices, id, newInvoice) => {
     const copy = [...invoices];
@@ -19,6 +15,27 @@ export const replaceInvoiceById = (invoices, id, newInvoice) => {
             return invoice;
         }
     });
+}
+
+export const getInvoiceById = (invoices, id) => {
+    const selected = invoices.filter(invoice => invoice.id === id);
+    return selected.length > 0 ? selected[0] : null;
+}
+export const getInvoiceById = (invoices, id) => {
+    const selected = invoices.filter(invoice => invoice.id === id);
+    return selected.length > 0 ? selected[0] : null;
+}
+export const getInvoiceById = (invoices, id) => {
+    const selected = invoices.filter(invoice => invoice.id === id);
+    return selected.length > 0 ? selected[0] : null;
+}
+export const getInvoiceById = (invoices, id) => {
+    const selected = invoices.filter(invoice => invoice.id === id);
+    return selected.length > 0 ? selected[0] : null;
+}
+export const getInvoiceById = (invoices, id) => {
+    const selected = invoices.filter(invoice => invoice.id === id);
+    return selected.length > 0 ? selected[0] : null;
 }
 
 export default function invoiceReducer(state, action) {
