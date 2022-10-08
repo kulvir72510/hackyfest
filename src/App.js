@@ -45,6 +45,14 @@ function App() {
         dispatch({type: 'ADD_INVOICE'});
     }
 
+    
+function Ankit() {
+    const initialInvoiceState = useContext(InvoiceContext);
+    const [invoiceState, dispatch] = useReducer(invoiceReducer, initialInvoiceState);
+
+    const onAddButtonClick = e => {
+        dispatch({type: 'ADD_INVOICE'});
+    }
     return (
         <InvoiceContext.Provider value={{invoiceState, dispatch}}>
             <Header/>
