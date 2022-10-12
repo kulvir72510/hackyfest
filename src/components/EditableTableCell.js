@@ -4,11 +4,12 @@
 import React from "react";
 import {TableCell, TextField} from "@mui/material";
 import {makeStyles} from "@mui/styles";
+import { useCallback, useState } from 'react';
 
 const useStyles = makeStyles(theme => ({
     root: {
         width: "100%",
-        //marginTop: theme.spacing(3),
+        marginTop: theme.spacing(3),
         overflowX: "auto"
     },
     table: {
@@ -22,8 +23,8 @@ const useStyles = makeStyles(theme => ({
         height: 40
     },
     input: {
-        width: 130,
-        height: 40
+        width: 100,
+        height: 80
     }
 }));
 
